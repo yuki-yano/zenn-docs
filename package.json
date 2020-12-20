@@ -1,0 +1,9 @@
+{
+  "name": "zenn-docs",
+  "version": "1.0.0",
+  "repository": "ssh://git@github.com/yuki-ycino/zenn-docs.git",
+  "author": "yuki_yano <yuki.ycino@gmail.com>",
+  "devDependencies": {
+    "zenn-cli": "^0.1.63"
+  }
+}
