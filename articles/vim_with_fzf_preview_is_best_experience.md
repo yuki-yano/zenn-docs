@@ -163,10 +163,10 @@ Interactive rebaseはVim内で完結するのが難しいので実装してい�
 以下が操作例です。
 
 **git, status, add, commit, log**
-[![git_add_commit_log](https://user-images.githubusercontent.com/5423775/102712017-4b29f000-4301-11eb-929a-c9647243d6f1.gif)](https://user-images.githubusercontent.com/5423775/102712017-4b29f000-4301-11eb-929a-c9647243d6f1.gif)
+@[youtube](l4khCeYgHT0)
 
 **git branch, diff, checkout**
-[![git_branch_diff_checkout](https://user-images.githubusercontent.com/5423775/102712023-52e99480-4301-11eb-92dd-84e91d573fc1.gif)](https://user-images.githubusercontent.com/5423775/102712023-52e99480-4301-11eb-92dd-84e91d573fc1.gif)
+@[youtube](0cCd2NOmbaE)
 
 ### 苦手な部分
 
@@ -179,13 +179,13 @@ Interactive rebaseはVim内で完結するのが難しいので実装してい�
 
 fzf-preview.vimを使って小規模な機能追加(TypeScriptのtypeにプロパティを増やす)を実際に行った簡単な例です。
 ![add_property_flow](https://user-images.githubusercontent.com/5423775/102732445-1740e000-437e-11eb-9495-b2f116cff005.png)
-[![add_property](https://user-images.githubusercontent.com/5423775/102712037-757bad80-4301-11eb-8726-13c4be0704c9.gif)](https://user-images.githubusercontent.com/5423775/102712037-757bad80-4301-11eb-8726-13c4be0704c9.gif)
+@[youtube](rKpbKKewUvM)
 
 ### リファクタリング
 
 動的言語(Vim script)での関数名を変更した簡単な例です。置換に[vim-qfreplace](https://github.com/thinca/vim-qfreplace)というプラグインを併用しています。
 ![refactor_flow](https://user-images.githubusercontent.com/5423775/102732457-1f991b00-437e-11eb-9a32-fa0c2b17c30a.png)
-[![refactor](https://user-images.githubusercontent.com/5423775/102712078-8af0d780-4301-11eb-9743-2056aad52af5.gif)](https://user-images.githubusercontent.com/5423775/102712078-8af0d780-4301-11eb-9743-2056aad52af5.gif)
+@[youtube](bd07x_gKCcw)
 
 ## 開発のモチベーション
 
