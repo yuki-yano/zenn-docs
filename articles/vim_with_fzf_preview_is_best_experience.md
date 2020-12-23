@@ -3,7 +3,7 @@ title: "TypeScriptでVimのファジーファインダーを実装して開発�
 emoji: "🔍"
 type: "tech"
 topics: ["Vim", "neovim", "fzf", "TypeScript"]
-published: false
+published: true
 ---
 
 :::message
