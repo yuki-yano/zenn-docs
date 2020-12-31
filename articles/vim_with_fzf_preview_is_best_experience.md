@@ -10,6 +10,11 @@ published: true
 この記事は[Vim Advent Calendar 2020](https://qiita.com/advent-calendar/2020/vim)の24日目の記事です。
 :::
 
+## 2020/12/31 追記
+
+VimからTypeScriptを実行するためのランタイムとしてNeovimのRemote Pluginかcoc.nvimのRPCを使うと書いたのですが、Vim scriptでRPCを実装したので外部のRPC実装への依存がなくなりました。
+coc.nvimを導入していない状態のVimでも使えるようになったので、興味がある方はぜひ試してみてください。
+
 ## はじめに
 
 この記事は自分が開発しているTypeScript製Vimプラグイン、[fzf-preview.vim](https://github.com/yuki-ycino/fzf-preview.vim)についての記事となっています。
@@ -255,18 +260,33 @@ Vimユーザはエディタの性質的にもミニマリストの方が比較�
 ### TypeScriptランタイム
 
 まず、Nodeと通信するのでTypeScriptをJS(CommonJS)にトランスパイルしておく必要があります。
-その後に(Neo)vimからCommonJSを実行する(NodeとRPCを使って通信する)のには主に2つの既存実装があります。
+その後に(Neo)vimからCommonJSを実行する(NodeとRPCを使って通信する)のには~~主に2つの既存実装があります~~以下の3つの方法があります。
 
+- Vim scriptを使って自分でRPCを実装する
 - NeovimのRemote Plugin機能を使う
 - [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)の拡張として実装する(独自でRPCを実装しているためVimでも利用できます)
 
-:::message
-自前でRPCを実装してもいいのですが、ここでは割愛します。
-:::
+~~なので標準のVimのみでは動作させることができません。上記のどちらかを導入してください。~~
+2020/12/31 追記: Vim scriptでのRPCを実装してVimとNodeのみで動作させられるようになりました。
 
-なので標準のVimのみでは動作させることができません。上記のどちらかを導入してください。
-fzf-preview.vimはwebpackでそれぞれの環境用にクロスビルドを行い、どちらでも動作するようになっています。
+fzf-preview.vimはwebpackでそれぞれの環境用にクロスビルドを行い、どれでも動作するようになっています。
 それぞれのインストール方法については以下の通りです。
+
+#### Vim script RPC
+
+##### vim-plug
+
+```vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/rpc' }
+```
+
+##### dein.vim
+
+```vim
+call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
+call dein#add('yuki-ycino/fzf-preview.vim', { 'rev': 'release/rpc' })
+```
 
 #### Remote Plugin
 
@@ -278,14 +298,14 @@ npm install -g neovim
 
 ```vim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
 ```
 
 ##### dein.vim
 
 ```vim
 call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
-call dein#add('yuki-ycino/fzf-preview.vim', { 'rev': 'release' })
+call dein#add('yuki-ycino/fzf-preview.vim', { 'rev': 'release/remote' })
 ```
 
 #### coc extensions
