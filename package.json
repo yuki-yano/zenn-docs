@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "repository": "ssh://git@github.com/yuki-ycino/zenn-docs.git",
   "author": "yuki_yano <yuki.ycino@gmail.com>",
+  "scripts": {
+    "preview": "zenn preview --port 8888"
+  },
   "devDependencies": {
     "markdownlint": "^0.22.0",
     "textlint": "^11.7.6",
