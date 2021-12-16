@@ -3,7 +3,7 @@ title: "Neovimでのフロントエンド開発環境 2021"
 emoji: "⚡"
 type: "tech"
 topics: ["Vim", "Neovim", "LSP", "TypeScript", "フロントエンド"]
-published: false
+published: true
 ---
 
 :::message
