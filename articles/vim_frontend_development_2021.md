@@ -13,6 +13,9 @@ published: false
 最近はフロントエンドエンジニア(主にReact)をしているYano ([@yuki_ycino](https://twitter.com/yuki_ycino)) といいます。
 この記事では自分が開発に使っているNeovim周りの環境と、その大まかな構成について書いていきます。
 
+関係ないですが最近Among Usというゲームをやっていて、金曜日にamong us engineerというDiscordサーバでよくプレイしています。
+[一番下](#おまけ)にこっそり招待リンクを書いておくので興味のあるエンジニアの方は覗いてみてください。
+
 ## はじめに
 
 自分は現在フロントエンド開発のほぼ全てをNeovimで行っています。
@@ -439,3 +442,7 @@ https://zenn.dev/yano/articles/vim_plugin_top_10
 
 もしVimについて知りたいことや質問があればvim-jp Slackや[Twitter](https://twitter.com/yuki_ycino)で連絡を頂ければ答えられると思うので、是非お願いします。
 それではより良いVimライフをお送りください！
+
+## おまけ
+
+[among us engineerサーバの招待URL](https://discord.gg/kbDyjUvp)
