@@ -103,7 +103,7 @@ LSと連携もcoc extensionsという仕組みを使い、コマンド1つで構
 ### [vim-lsp](https://github.com/prabirshrestha/vim-lsp)
 
 vim-lspはVim scriptで実装されたLSPプラグインです。
-Pure Vim scriptで実装されているの外部依存がないなどのメリットがあります。
+Pure Vim scriptで実装されているので外部依存がないなどのメリットがあります。
 また、[vim-lsp-settings](https://github.com/mattn/vim-lsp-settings)という環境整備のためのプラグインが手厚く管理されており、LSの設定にはあまり困らないようになっています。
 
 coc.nvimとの大きな違いとして、All in Oneではないため補完にはVim標準のomnifuncを使うか、より高度な自動補完をするなら補完プラグインを別途導入する必要があります。
