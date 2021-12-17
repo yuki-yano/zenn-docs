@@ -109,10 +109,10 @@ Pure Vim scriptで実装されているの外部依存がないなどのメリ�
 coc.nvimとの大きな違いとして、All in Oneではないため補完にはVim標準のomnifuncを使うか、より高度な自動補完をするなら補完プラグインを別途導入する必要があります。
 [asyncomplete.vim](https://github.com/prabirshrestha/asyncomplete.vim), [ddc.vim](https://github.com/Shougo/ddc.vim), [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) などがあるのですが、このあたりから選定して補完設定を行う必要があります。
 
-### nvim_lsp
+### nvim-lsp
 
-nvim_lspはNeovim built-inのLSPクライアントです。built-inなので信頼度は最も高いかもしれません。
-nvim_lspについては自分は使ったことがないのですが、設定が大変だという話をよく聞きます。([nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer)というプラグインはあるのですが、それにしても設定が難しいという声を多く聞きます)
+nvim-lspはNeovim built-inのLSPクライアントです。built-inなので信頼度は最も高いかもしれません。
+nvim-lspについては自分は使ったことがないのですが、設定が大変だという話をよく聞きます。([nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer)というプラグインはあるのですが、それにしても設定が難しいという声を多く聞きます)
 周辺のエコシステムは徐々に整ってきているように見えるので、自分もそろそろ検証したいと思っています。
 
 現状ではこの3つの中では設定が手間なのも含め、最も人柱に近いLSPクライアントだと思っているので個人的にはあまり推奨していません。
