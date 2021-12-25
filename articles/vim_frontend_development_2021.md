@@ -13,6 +13,11 @@ published: true
 最近はフロントエンドエンジニア(主にReact)をしているYano ([@yuki_ycino](https://twitter.com/yuki_ycino)) といいます。
 この記事では自分が開発に使っているNeovim周りの環境と、その大まかな構成について書いていきます。
 
+## 追記
+
+後日、[自分がNeovimでフロントエンド開発を行っている理由とVSCode](https://zenn.dev/yano/articles/why_use_neovim_instead_of_vscode_for_development) という記事を書きました。
+合わせて読んでいただけると幸いです。
+
 ## はじめに
 
 自分は現在フロントエンド開発のほぼ全てをNeovimで行っています。
