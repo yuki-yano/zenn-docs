@@ -3,7 +3,7 @@ title: "自分がNeovimでフロントエンド開発を行っている理由と
 emoji: "🛠️"
 type: "tech"
 topics: ["Vim", "Neovim", "VSCode"]
-published: false
+published: true
 ---
 
 :::message
