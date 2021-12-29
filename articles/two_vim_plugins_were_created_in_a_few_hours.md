@@ -3,7 +3,7 @@ title: "1つの発言から数時間でVimプラグインが2つ+αできた話"
 emoji: "⚡"
 type: "tech"
 topics: ["Vim", "Neovim"]
-published: false
+published: true
 ---
 
 ## 概要
