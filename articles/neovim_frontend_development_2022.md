@@ -439,7 +439,7 @@ vim.api.nvim_create_autocmd({ 'FileType' }, {
   callback = function()
     vim.keymap.set({ 'n' }, '<Plug>(lsp)f', function()
       vim.cmd([[EslintFixAll]])
-      vim.lsp.buf.format('null-ls')
+      vim.lsp.buf.format({ name = 'null-ls' })
     end)
   end,
 })
